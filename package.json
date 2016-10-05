@@ -5,6 +5,6 @@
   "dependencies": {
     "path": "*",
     "express":"*",
-    "node-rest-client": "*",
+    "node-rest-client": "*"
   }
 }
