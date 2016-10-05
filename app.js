@@ -7,16 +7,16 @@ var app = function()
 	app.set('port', process.env.PORT || 80);
 
 
-	app.use(express.static(path.join(__dirname, '/app')));
+	app.use(express.static(path.join(__dirname, '/view')));
+	
 	app.get('/', function (req, res) {
-		res.sendFile('index.html', {root: __dirname + '/app/'})
+		res.sendFile('index.html', {root: __dirname + '/view/'})
 	});
 
 	app.use(function (err, req, res, next) {
-	console.log(err.stack);
-	res.status(500).send({message: err.message});
+	console.log(err.stack);	res.status(500).send({message: err.message});
 	});
-
+	
 	 return app;
 
 }();

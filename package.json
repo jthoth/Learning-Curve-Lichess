@@ -4,6 +4,7 @@
   "version": "0.0.2",
   "dependencies": {
     "path": "*",
-    "node-rest-client": "*"
+    "express":"*",
+    "node-rest-client": "*",
   }
 }
