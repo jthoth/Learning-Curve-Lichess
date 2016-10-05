@@ -3,8 +3,7 @@
   "description": "This is aplication use Diferential Equations for try predict the learning curve in the account lichess.",
   "version": "0.0.1",
   "engines": {
-    "node": "0.10.x",
-    "npm": "2.15.x"
+    "node": "0.10.x"
   },
   "dependencies": {
     "express": "*",
