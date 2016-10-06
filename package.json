@@ -1,6 +1,7 @@
 {
   "name": "predictionn_lichess",
   "description": "This is aplication use Diferential Equations for try predict the learning curve in the account lichess.",
+  "main": "start.js",
   "version": "0.0.3",
   "dependencies": {
     "express": "*",
