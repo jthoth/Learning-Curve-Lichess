@@ -1,5 +1,5 @@
 {
-  "name": "Prediction Ranking for User of Lichess",
+  "name": "predictionn_lichess",
   "description": "This is aplication use Diferential Equations for try predict the learning curve in the account lichess.",
   "version": "0.0.3",
   "dependencies": {
