@@ -7,7 +7,6 @@ var app = app || {};
 
 
     var data = ctrl.compute_chart();
-    console.log(data);
 
     // this is a error using parameter I do not how use mitrhil for render parameter to id div
 

@@ -17,9 +17,7 @@ if (actived)
 		];
 }else
 {
-	console.log('hide');
-
-				return [
+		return [
 
 			m('div.card#graph_container[style="display: none;"]',[
 
