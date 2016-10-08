@@ -2,5 +2,7 @@
 
 > Octubre, 2016: LearningCurve Model v1
 
-https://learningcurvelichess.herokuapp.com/
+![ RESULT ](/view/image/example.png "Page : Page ")
+
+> url : https://learningcurvelichess.herokuapp.com/
 
