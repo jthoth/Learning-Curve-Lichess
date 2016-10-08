@@ -7,13 +7,12 @@ var app = app || {};
 
 
     var data = ctrl.compute_chart();
-
+    console.log(data);
 
     // this is a error using parameter I do not how use mitrhil for render parameter to id div
 
-        $('#params_user').empty()
-        $('#params_user').append('<p class="card__description"> Glicko Elo: '+parseInt(ctrl.parameters.last_rating)+' | Hours played: '+parseInt(ctrl.parameters.hours)+'</p>');
-    
+    $('#params_user').empty();
+    $('#params_user').append('<p class="card__description"> Glicko Elo: '+parseInt(ctrl.parameters.last_rating)+' | Hours played: '+parseInt(ctrl.parameters.hours)+'</p>');
     // 
 
 

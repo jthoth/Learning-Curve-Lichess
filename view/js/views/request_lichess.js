@@ -8,16 +8,17 @@ app.request_lichess = function (ctrl , actived) {
 
 
 if (actived) 
-{		
+{	
 		return [
 
 				// SOME JQUERY , I NEED MORE MITRHIL KNOWLEDGE
-
-				$('#graph_container').show(),
+				$('div#graph_container').show(),
 				app.chart_view(ctrl)
 		];
 }else
 {
+	console.log('hide');
+
 				return [
 
 			m('div.card#graph_container[style="display: none;"]',[

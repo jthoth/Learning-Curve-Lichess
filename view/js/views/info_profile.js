@@ -47,15 +47,16 @@ var app = app || {};
                          }),
                         m('label.subscribe-card__label[for="user_name"]','Username'), 
 
-                        ctrl.data_user == null ? '' : ctrl.parameters.error ? m('p.card__description','USER NOT FOUND') :''
+                        ctrl.data_user == null ? '' : ctrl.storage_data().error ? m('p.card__description','USER NOT FOUND') : ''
 
                    ])
 
         ]),
 
       app.request_lichess(ctrl,false),
-      ctrl.data_user == null ? '' : ctrl.parameters.error ? '' : app.request_lichess(ctrl,true),
+      ctrl.parameters.user ? app.request_lichess(ctrl,true) : ''
 
+  
     ];
   };
 

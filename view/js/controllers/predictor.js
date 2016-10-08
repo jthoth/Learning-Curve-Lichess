@@ -20,16 +20,14 @@ var app = app || {};
         }
 
 
-        this.select = function(args, extras) {
-          
-             return {  options: args.options,   select: args.change,  className: args.className   }
-
+      this.storage_data = function()
+        {
+          this.parameters = this.data_user.toJSON();
+          return  this.parameters;
         }
 
-        this.compute_chart = function()
+       this.compute_chart = function()
         {
-
-          this.parameters = this.data_user.toJSON();
           var x = [];
           var y = [];
 
