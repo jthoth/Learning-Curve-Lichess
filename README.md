@@ -2,7 +2,7 @@
 
 > Octubre, 2016: LearningCurve Model v1
 
-![results](/results/regress.png "RANSAC")
+![results](/view/img/example.png "EXAMPLE")
 
 > url : https://learningcurvelichess.herokuapp.com/
 
