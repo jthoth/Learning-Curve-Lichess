@@ -3,7 +3,7 @@ var app = app || {};
 
 
 (function () {
-    
+
     var DropDownCategory = {
       controller: function () {
         var ctrl = this
@@ -29,7 +29,7 @@ var app = app || {};
 
     app.view = function(ctrl) {
         return [
-    m('div.card',[        
+    m('div.card',[
         m('div.card__content-wrapper',[
                         m('a[href="#"]',
                         m('h3.card__title','PROFILE INFO')),
@@ -37,15 +37,15 @@ var app = app || {};
                         m('p.card__description','Critical parameter for analysis'),
                         m('p.card__description', ''),
                         m.component(DropDownCategory),
-                        m('label.subscribe-card__label[for="input_pref"]','Category'), 
-                        
-                        m('input.subscribe-card__field#user_name',{ 
-                            onkeypress: app.watchInput( m.withAttr('value', ctrl.username), 
-                                                                            ctrl.call_api.bind(ctrl, ctrl.username,$('#input_pref').val())                                          
+                        m('label.subscribe-card__label[for="input_pref"]','Category'),
+
+                        m('input.subscribe-card__field#user_name[placeholder="Intro after write your username"]',{
+                            onkeypress: app.watchInput( m.withAttr('value', ctrl.username),
+                                                                            ctrl.call_api.bind(ctrl, ctrl.username,$('#input_pref').val())
                                                       ),
                             value: ctrl.username()
                          }),
-                        m('label.subscribe-card__label[for="user_name"]','Username'), 
+                        m('label.subscribe-card__label[for="user_name"]','Username'),
 
                         ctrl.data_user == null ? '' : ctrl.storage_data().error ? m('p.card__description','USER NOT FOUND') : ''
 
@@ -56,7 +56,7 @@ var app = app || {};
       app.request_lichess(ctrl,false),
       ctrl.parameters.user ? app.request_lichess(ctrl,true) : ''
 
-  
+
     ];
   };
 

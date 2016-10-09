@@ -1,4 +1,4 @@
-/* Autor : jhon.thoth@gmail.com */ 
+/* Autor : jhon.thoth@gmail.com */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -208,7 +208,7 @@ nav .container {
   position:absolute;
   z-index:1000;
 }
-.morris-hover.morris-default-style {     
+.morris-hover.morris-default-style {
   border-radius:10px;
   padding:6px;
   color:#666;
@@ -308,6 +308,7 @@ nav .container {
   margin-bottom: 5px;
   line-height: 30px;
   font-family: 'Oswald', sans-serif;
+  text-align: center;
 }
 
 .subscribe-card__label {
