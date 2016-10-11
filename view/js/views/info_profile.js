@@ -29,6 +29,7 @@ var app = app || {};
 
     app.view = function(ctrl) {
         return [
+  m('div.row',[
     m('div.card',[
         m('div.card__content-wrapper',[
                         m('a[href="#"]',
@@ -39,7 +40,7 @@ var app = app || {};
                         m.component(DropDownCategory),
                         m('label.subscribe-card__label[for="input_pref"]','Category'),
 
-                        m('input.subscribe-card__field#user_name[placeholder="Intro after write your username"]',{
+                        m('input.subscribe-card__field#user_name[placeholder="Enter´s your username"]',{
                             onkeypress: app.watchInput( m.withAttr('value', ctrl.username),
                                                                             ctrl.call_api.bind(ctrl, ctrl.username,$('#input_pref').val())
                                                       ),
@@ -49,13 +50,27 @@ var app = app || {};
 
                         ctrl.data_user == null ? '' : ctrl.storage_data().error ? m('p.card__description','USER NOT FOUND') : ''
 
-                   ])
+                   ]),
+             ]),
 
-        ]),
+             app.request_lichess(ctrl,false),
+             ctrl.parameters.user ? app.request_lichess(ctrl,true) : ''
+          ]),
 
-      app.request_lichess(ctrl,false),
-      ctrl.parameters.user ? app.request_lichess(ctrl,true) : ''
+          m('div.row',[
+            m('div.card#graph_winproba[style="display: none;"]',[
 
+                  m('div.card__content-wrapper',[
+
+                    m('a[href="#"]',
+                                m('h3.card__title','YOUR WIN PROBABILITY AGAINST OTHER PLAYERS OF DIFFERENT RATING')),
+                    m('div#plot_winporb[style="width: 100%; height: 400px;"]'),
+                    m('div#params_winproba')
+                    ])
+
+              ]),
+
+            ]),
 
     ];
   };

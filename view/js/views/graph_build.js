@@ -12,7 +12,8 @@ var app = app || {};
 
     $('#params_user').empty();
     $('#params_user').append('<p class="card__description"> Glicko Elo: '+parseInt(ctrl.parameters.last_rating)+' | Hours played: '+parseInt(ctrl.parameters.hours)+'</p>');
-    // 
+    $('#params_user').append('<p class="card__description"> Model Equation: dL/dt = k(Lmax - L)  </p>');
+    //
 
 
     $('#plot_games').highcharts({
@@ -41,7 +42,7 @@ var app = app || {};
     color: 'red', // Color value
     dashStyle: 'longdashdot', // Style of the plot line. Default to solid
     value: parseInt(data.from / 10), // Value of where the line will appear
-    width: 2, // Width of the line  
+    width: 2, // Width of the line
   }]
     },
     yAxis: {
