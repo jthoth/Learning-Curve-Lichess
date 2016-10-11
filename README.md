@@ -1,8 +1,8 @@
 # PredictionLearningCurve
 
-> Octubre, 2016: LearningCurve Model v1
+> Octubre, 2016: LearningCurve Model v2
 
-![results](/view/img/example.png "EXAMPLE")
+![results](/view/img/example_v2.png "EXAMPLE")
 
 > url : https://learningcurvelichess.herokuapp.com/
 
