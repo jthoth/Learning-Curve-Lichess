@@ -4,6 +4,5 @@
 
 ![results](/view/img/example_v2.png "EXAMPLE")
 
-
-> url : http://www.math24.net/learning-curve.html
+The model was getting of > url : http://www.math24.net/learning-curve.html
 
